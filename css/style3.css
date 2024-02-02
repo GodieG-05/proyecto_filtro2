@@ -4,8 +4,8 @@ body{
     padding: 0.2%;
 }
 #contenedor{
-    height: 570px;
-    font-size: 0.6em;
+    height: 650px;
+    font-size: 1em;
     padding: 0% 20%;
     background-color: #CDCFDD;
     padding-top: 2%;
@@ -18,8 +18,8 @@ header .header img{
     box-shadow: 2px 2px 15px #A0A3BF;
 }
 main{
-    padding-left: 24%;
-    padding-right: 24%;  
+    padding-left: 23%;
+    padding-right: 28%;  
 }
 footer{
     display: flex;

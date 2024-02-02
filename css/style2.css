@@ -10,6 +10,8 @@ body{
     justify-content: space-between;
     background-color: #A0A3BF;
     padding: 2% 2%;
+    font-size: 1.5rem;
+    border-radius: 5px;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 3%;
