@@ -1,0 +1,143 @@
+body{
+    font-family:NeuePlak-Regular,ParaType,Fabriga,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-size: 1.2em;
+    padding: 1.8% 1.8% 1.8% 1.8%;
+    background-color: #CDCFDD;
+}
+/* Encabezado de catálogo */
+#container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A0A3BF;
+    padding: 2% 2%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 3%;
+    text-align:end  ; */
+}
+a{
+    text-decoration: none;
+    color: black
+}
+/* grid de contenido */
+#container2{
+    display: grid;
+    grid-template-columns: 0.47fr 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    gap: 1%;
+    grid-template-areas: "img1-1 imag1 about"
+        "img1-2 imag1 about"
+        "img1-3 imag1 about"
+        "img1-4 imag1 about"
+        ". . .";
+}
+.img1-1{
+    grid-area: img1-1;
+}
+.img1-2{
+    grid-area: img1-2
+}
+.img1-3{
+    grid-area: img1-3
+}
+.img1-4{
+    grid-area: img1-4;  
+}
+.imag1{
+    
+    grid-area: imag1;
+}
+.about{
+    grid-area: about;
+    padding-left: 5%;
+}
+/* botón de obtener */
+.boton{
+    background-color: black;
+    color: white;
+    width:100px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5% 0.5%;
+}
+.boton:hover{
+    background-color: rgba(129, 133, 134, 0.95);
+}
+
+.A1{
+    background-image: url('../images/producto1.png');
+    background-size: cover;
+    width: 100%;
+}
+.A1 p{
+    background-color: #A0A3BF;
+    width: fit-content;
+    color: red;
+}
+.A2:hover ~ .A1{
+    background-image: url('../images/producto1.1.png');
+}
+.A3:hover ~ .A1{
+    background-image: url('../images/producto1.2.png');
+}
+.A4:hover ~ .A1{
+    background-image: url('../images/producto1.3.png');
+}
+.A5:hover ~ .A1{
+    background-image: url('../images/producto1.4.png');
+}
+.B1{
+    background-image: url('../images/producto2.png');
+    background-size: cover;
+    width: 100%;
+}
+.B2:hover ~ .B1{
+    background-image: url('../images/producto2.1.png');
+}
+.B3:hover ~ .B1{
+    background-image: url('../images/producto2.2.png');
+}
+.B4:hover ~ .B1{
+    background-image: url('../images/producto2.3.png');
+}
+.B5:hover ~ .B1{
+    background-image: url('../images/producto2.4.png');
+}
+.C1{
+    background-image: url('../images/producto3.png');
+    background-size: cover;
+    width: 100%;
+}
+.C2:hover ~ .C1{
+    background-image: url('../images/producto3.1.png');
+}
+.C3:hover ~ .C1{
+    background-image: url('../images/producto3.2.png');
+}
+.C4:hover ~ .C1{
+    background-image: url('../images/producto3.3.png');
+}
+.C5:hover ~ .C1{
+    background-image: url('../images/producto3.4.png');
+}
+.D1{
+    background-image: url('../images/producto4.png');
+    background-size: cover;
+    width: 100%;
+}
+.D2:hover ~ .D1{
+    background-image: url('../images/producto4.1.png');
+}
+.D3:hover ~ .D1{
+    background-image: url('../images/producto4.2.png');
+}
+.D4:hover ~ .D1{
+    background-image: url('../images/producto4.3.png');
+}
+.D5:hover ~ .D1{
+    background-image: url('../images/producto4.4.png');
+}
+
+

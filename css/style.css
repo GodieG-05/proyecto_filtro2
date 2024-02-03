@@ -1,21 +1,26 @@
 body{
     font-family:NeuePlak-Regular,ParaType,Fabriga,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
     font-size: 1.2em;
-    padding: 1.8% 1.8% 1.8% 1.8%;
-
+    padding: 1.8% 1.8% 0% 1.8%;
+    background-color: #CDCFDD;
 
 }
 #container{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    padding-bottom: 20px;
+    background-color: #A0A3BF;
+    border-radius: 5px;
 }
 
 #container2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
-    gap: 5px;
+    column-gap: 10px;
+    row-gap: 30px;
+    padding-bottom: 60px;
 }
 .banner{
     grid-column: 1/4;  
@@ -25,7 +30,11 @@ body{
     background-color: greenyellow;
 }
 #container3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content:space-around;
+    background-color: #A0A3BF;
+}
+a{
+    text-decoration: none;
+    color: black
 }
