@@ -28,7 +28,9 @@ section{
     display:flex;
     gap:5%;
 }
-
+section del{
+    color: red;
+}
 footer{
     display: flex;
     gap: 3%;

@@ -76,6 +76,21 @@ a{
     width: fit-content;
     color: red;
 }
+.B1 p{
+    background-color: #A0A3BF;
+    width: fit-content;
+    color: red;
+}
+.C1 p{
+    background-color: #A0A3BF;
+    width: fit-content;
+    color: red;
+}
+.D1 p{
+    background-color: #A0A3BF;
+    width: fit-content;
+    color: red;
+}
 .A2:hover ~ .A1{
     background-image: url('../images/producto1.1.png');
 }
