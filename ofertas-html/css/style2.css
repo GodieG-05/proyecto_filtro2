@@ -194,10 +194,15 @@ a{
         display: inline;
 
     }
+    #container a.carrito{
+        display: inline;
+        position: relative;
+        left: 25%;
+    }
     #container a.menu{
         display: inline;
         position: relative;
-        right: 30%;
+        right: 25%;
     }
     .imag1{
         background-size: 100%;
