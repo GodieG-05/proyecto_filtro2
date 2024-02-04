@@ -34,7 +34,7 @@ img{
 }
 .p1{
     border: solid 1px;
-    width: 150px;
+    width: 35%;
 }
 .pagar{
     border: solid 1px;
@@ -54,4 +54,26 @@ main{
     padding: 1% 10%;
     background-color: #CDCFDD;
     box-shadow: 2px 2px 15px #A0A3BF;
+}
+@media (max-width: 480px){
+    body{  
+        padding: 0% 0%;
+        
+    }
+    .img{
+        position: relative;
+        top: 20%
+    }
+    .p1{
+        width: 35%;
+    }
+}
+@media (max-width:405px){
+    body{
+        font-size: 0.7rem;
+    }
+    .img img{
+        position: relative;
+        width: 60%;
+    }
 }

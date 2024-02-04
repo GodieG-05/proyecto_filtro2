@@ -6,12 +6,12 @@ body{
 
 }
 #container{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2%;
     background-color: #A0A3BF;
     border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 #container2{
@@ -27,7 +27,7 @@ body{
 }
 
 .img{
-    background-color: greenyellow;
+    border-radius: 50px;
 }
 #container3{
     display: flex;

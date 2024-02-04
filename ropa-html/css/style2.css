@@ -21,11 +21,18 @@ a{
     text-decoration: none;
     color: black
 }
+.categoria{
+    color: #EAEEEF;
+    font-size: 1.2em;
+}
+#container .menu{
+    display: none;
+}
 /* grid de contenido */
 #container2{
     display: grid;
     grid-template-columns: 0.47fr 2fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    grid-template-rows: repeat(5, 0.5fr);
     gap: 1%;
     grid-template-areas: "img1-1 imag1 about"
         "img1-2 imag1 about"
@@ -133,6 +140,77 @@ a{
 }
 .D5:hover ~ .D1{
     background-image: url('../images/producto4.4.png');
+}
+@media (max-width: 480px){
+    #container2{
+        padding: 2% 2%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        /* column-gap: 5%; */
+        grid-template-areas: "img1-1 imag1"
+            "img1-2 imag1"
+            "img1-3 imag1"
+            "img1-4 imag1"
+            "about about";
+        font-size:1em;
+        justify-items: end;
+        column-gap: 0%;
+        /* justify-items:end; */
+        /* grid-template-areas: "img1-1 imag1 about"
+            "img1-2 imag1 about"
+            "img1-3 imag1 about"
+            "img1-4 imag1 about"
+            ". . ."; */
+        
+    }
+    #container{
+        justify-content:center;
+    }
+    #container a:not(.categoria){
+        display: none;
+    }
+    #container a.categoria{
+        display: inline;
+
+    }
+    #container a.menu{
+        display: inline;
+        position: relative;
+        right: 30%;
+    }
+    .imag1{
+        background-size: 100%;
+        height: 98.6%;
+    }
+    #container2 nav{
+        position: relative;
+        left: -30%;
+
+    }
+    #container2 .imag1{
+        position: relative;
+        left: -10%
+    }
+    .img1-1{
+        width: 50%;
+    }
+    .img1-2{
+        width: 50%;
+    }
+    .img1-3{
+        width: 50%;
+    }
+    .img1-4{
+        width: 50%;
+    }
+    .about{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+
 }
 
 

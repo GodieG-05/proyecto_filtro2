@@ -1,0 +1,27 @@
+body{
+    font-family:NeuePlak-Regular,ParaType,Fabriga,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-size: 1.2em;
+    padding: 1.8% 1.8% 0% 1.8%;
+    background-color: #CDCFDD;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+section{
+    background-color: #A0A3BF;
+    text-align: center;
+    padding: 2% 40%;
+}
+section a p{
+    background-color: #CDCFDD;
+     border-radius:10px;  
+}
+@media (max-width: 480px){
+    section{
+        background-color: #A0A3BF;
+        text-align: center;
+        padding: 2% 30%;
+    }
+}

@@ -12,7 +12,6 @@ body{
     padding: 2% 2%;
     font-size: 1.5rem;
     border-radius: 5px;
-
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 3%;
@@ -26,11 +25,14 @@ a{
     color: #EAEEEF;
     font-size: 1.2em;
 }
+#container .menu{
+    display: none;
+}
 /* grid de contenido */
 #container2{
     display: grid;
     grid-template-columns: 0.47fr 2fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: repeat(5, 0.5fr);
     gap: 1%;
     grid-template-areas: "img1-1 imag1 about"
         "img1-2 imag1 about"
@@ -162,11 +164,20 @@ a{
             ". . ."; */
         
     }
+    #container{
+        justify-content:center;
+    }
     #container a:not(.categoria){
         display: none;
     }
     #container a.categoria{
         display: inline;
+
+    }
+    #container a.menu{
+        display: inline;
+        position: relative;
+        right: 30%;
     }
     .imag1{
         background-size: 100%;
