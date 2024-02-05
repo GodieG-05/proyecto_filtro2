@@ -27,8 +27,8 @@ body{
     grid-column: 1/4;  
 }
 .sale{
-    position: relative;
-    top: -60%;
+    position: absolute;
+    top: 50%;
     left: 33%;
     animation-name: sale;
     animation-duration: 2s;
@@ -61,6 +61,9 @@ a{
     #container nav img{
         width: 25%
 
+    }
+    .sale{
+        top:12%
     }
 }
 @keyframes sale{
