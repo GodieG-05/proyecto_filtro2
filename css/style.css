@@ -8,6 +8,7 @@ body{
 #container{
     display: flex;
     justify-content: space-between;
+    gap: 5%;
     padding: 2% 2%;
     background-color: #A0A3BF;
     border-radius: 5px;
@@ -25,7 +26,16 @@ body{
 .banner{
     grid-column: 1/4;  
 }
-
+.sale{
+    position: relative;
+    top: -60%;
+    left: 33%;
+    animation-name: sale;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
 .img{
     border-radius: 50px;
 }
@@ -37,4 +47,32 @@ body{
 a{
     text-decoration: none;
     color: black
+}
+@media (max-width: 480px){
+    #container3{
+        font-size: 0.7rem;
+    }
+    #container{
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        gap: 10%
+    }
+    #container nav img{
+        width: 25%
+
+    }
+}
+@keyframes sale{
+    0%{
+        
+        
+    }
+    50%{
+        width: 40%;
+        left: 30%
+    }
+    100%{    
+        
+    }
 }

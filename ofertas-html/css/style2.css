@@ -98,6 +98,16 @@ a{
     width: fit-content;
     color: red;
 }
+.about del{
+    color: red;
+}
+.imag1 p{
+    animation-name: sale;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
 .A2:hover ~ .A1{
     background-image: url('../images/producto1.1.png');
 }
@@ -161,6 +171,13 @@ a{
 .D5:hover ~ .D1{
     background-image: url('../images/producto4.4.png');
 }
+.carrito{
+    animation-name: icono;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
 @media (max-width: 480px){
     #container2{
         padding: 2% 2%;
@@ -175,7 +192,7 @@ a{
             "about about";
         font-size:1em;
         justify-items: end;
-        column-gap: 0%;
+        gap: 0%;
         /* justify-items:end; */
         /* grid-template-areas: "img1-1 imag1 about"
             "img1-2 imag1 about"
@@ -218,24 +235,54 @@ a{
         left: -10%
     }
     .img1-1{
-        width: 50%;
+        width: 47.6%;
     }
     .img1-2{
-        width: 50%;
+        width: 47.6%;
     }
     .img1-3{
-        width: 50%;
+        width: 47.6%;
     }
     .img1-4{
-        width: 50%;
+        width: 47.6%;
     }
     .about{
         padding-left: 6%;
         padding-right: 6%;
     }
 
+}
+@keyframes sale{
+    0%{
+        
+        
+    }
+    50%{
+        font-size: 1.3em;
+        
+    }
+    100%{    
+        
+    }
+}
+@keyframes icono{
 
-
+    10%{
+        transform: rotate(45deg);
+   }
+    25%{
+         transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(-45deg);
+   }
+    55%{
+        transform: rotate(0deg);
+    }
+    
+    100%{    
+        transform: rotate(0deg);
+    }
 }
 
 
